@@ -1,0 +1,308 @@
+
+.scontainer
+{
+    background: none repeat scroll 0 0 threedface;
+    border-color: threedhighlight threedshadow threedshadow threedhighlight;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    height: 22px;
+    font-size: 1px;
+}
+
+.sbar
+{
+    border-bottom: 2px solid gray;
+    margin: 0px 12px;
+    height: 10px;
+}
+
+.shandle
+{
+    width: 10px;
+    height: 11px;
+    background-color: lightgray;
+    border: 1px solid darkslategrey;
+    color: gray;
+    position: relative;
+    cursor: pointer;
+    top: 5px;
+}
+
+.accordion-content .lbl
+{
+    width: 180px;
+    display: inline-block;
+}
+
+.accordion-content .txtbx
+{
+    width: 70px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 0px 2px #cccccc;
+    -webkit-box-shadow: 0px 0px 2px #cccccc;
+    box-shadow: 0px 0px 2px #cccccc;/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+.preview
+{
+    background-color: #21aee8;
+    border: 1px solid black;
+    color: white;
+    /**/display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+    width: 270px;
+    height: 38px;
+    cursor: pointer;
+}
+
+/* circle input */
+.circlecontainer
+{
+    background: none repeat scroll 0 0 white;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+#dotted
+{
+    border-width: 2px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#dial
+{
+    height: 2px;
+    margin: 49px 0 0 5px;
+    display: block;
+    width: 90px;
+}
+
+#dial_0
+{
+    font-size: 9px;
+    left: 88px;
+    position: inherit;
+    top: 41px;
+}
+
+#dial_90
+{
+    font-size: 9px;
+    left: 43px;
+    position: inherit;
+    top: 1px;
+}
+
+#dial_180
+{
+    font-size: 9px;
+    left: 1px;
+    position: inherit;
+    top: 41px;
+}
+
+#dial_270
+{
+    font-size: 9px;
+    left: 40px;
+    position: inherit;
+    top: 87px;
+}
+
+#dial_l
+{
+    background-color: red;
+    width: 50%;
+    height: 2px;
+}
+
+#r_pt
+{
+    height: 1px;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 1px;
+    position: absolute;
+}
+
+#r_center
+{
+    height: 1px;
+    margin: 100px 0 0 100px;
+    position: absolute;
+    width: 1px;
+}
+
+/* code */
+#wrapper
+{
+    border: 0px;
+    background: none;
+}
+
+#previewcont
+{
+    text-align: center;
+    height: 210px;
+    width: 518px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #ffffff;
+    padding: 5px 10px 10px 10px;
+    border: 1px solid #cccccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 5px 15px #cccccc;
+    -webkit-box-shadow: 0 5px 15px #cccccc;
+    box-shadow: 0 5px 15px #cccccc;
+}
+
+div.codeContainer
+{
+    font-size: 13px;
+    width: 518px;
+    background: #ffffff;
+    padding: 5px 10px 10px 10px;
+    border: 1px solid #cccccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 5px 15px #cccccc;
+    -webkit-box-shadow: 0 5px 15px #cccccc;
+    box-shadow: 0 5px 15px #cccccc;
+}
+
+div.tutoContainer{
+  font-size: 13px;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 5px 15px #cccccc;
+    -webkit-box-shadow: 0 5px 15px #cccccc;
+    box-shadow: 0 5px 15px #cccccc;   
+}
+
+div.codenametab
+{
+    margin-top: 10px;
+}
+
+div.codenametab span
+{
+    background-color: white;
+    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
+    border-top: 1px solid #888888;
+    cursor: pointer;
+    padding: 4px 15px 1px;
+}
+
+div.codenametab span.hide
+{
+    background-color: Silver;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.code
+{
+    background-color: white;
+    border: 1px solid #888888;
+    display: block;
+    font: 14px monospace;
+    height: 500px;
+    overflow: auto;
+    padding: 6px 0 6px 12px;
+    margin-right: 13px;
+}
+
+.code-shape
+{
+    margin-left: 16px;
+}
+
+.code-shape div
+{
+    margin-left: 16px;
+}
+
+.codetab span.b
+{
+    color: blue;
+}
+
+.codetab span.r
+{
+    color: #BD0000;
+}
+
+.codetab span.cm, .codetab span.g
+{
+    color: #46A105;
+}
+
+div.tab
+{
+    height: 40px;
+}
+
+.tab span
+{
+    background-color: #EBEBEB;
+    cursor: pointer;
+    cursor: black;
+    border-color: gray;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    height: 14px;
+    margin: 0 3px 3px;
+    padding: 10px 7px 7px;
+}
+/*
+.tab span.disable_tab
+{
+    border: none;
+    color: gray;
+    background-color: white;
+    padding: 9px 7px 7px;
+}
+*/
+div.tooldesc
+{
+    border: 1px solid #888888;
+    color: #555555;
+    line-height: 18px;
+    margin: 0 28px 16px 0;
+    padding: 9px 18px;
+    text-align: justify;
+    background: none repeat scroll 0 0 snow;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 3px steelblue inset;
+}
+
+div.tooldesc b
+{
+    color: black
+}

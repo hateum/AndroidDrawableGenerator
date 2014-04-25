@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script language="javascript" src="js/jquery-2.1.0.js" type="text/javascript"></script>
+<script language="javascript" src="js/spectrum.js" type="text/javascript"></script>
+<script language="javascript" src="js/paletteColorSpectrum.js" type="text/javascript"></script>
+<script language="javascript" src="js/android.button-0.2.min.js" type="text/javascript"></script>
+<script src="js/vallenato.js" type="text/javascript"></script>
+<script src="js/inputslider-0.1.min.js" type="text/javascript"></script>
+<script src="js/inputcircleslider-0.1.min.js" type="text/javascript"></script>
+<script src="js/tabcontent.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/tabcontent.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/android.button.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/vallenato.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/spectrum.css" type="text/css" media="screen" />
+</head>
+<body>
+<div style="margin:7px auto;width:980px;"> <span style="font-size:20pt;font-family:Georgia;font-weight:bold;margin-left:70px;"> <span style="color:#c6f089">Android Drawble Generator</span> </span>
+  <div style="float:right"> <br/>
+  </div>
+</div>
+<div id="wrapper">
+  <hr style="margin-left:-100px;margin-right:-100px"  color="#CCCCCC" />
+  <br/>
+  <div class="" >
+    <div>
+      <table width="100%" cellspacing="0" cellpadding="3" border="0" >
+        <tr valign="top" height="450px;">
+          <td><span style="font-size:18pt;font-family:Georgia;margin-top:-15px">Property</span>
+            <div id="accordion-container">
+            <h2 class="accordion-header">Button</h2>
+            <div class="accordion-content">
+              <div> <span class="lbl" >android:text</span>
+                <input type="textbox" class="btn_target txtbx" name="btn_text" id="btn_text" value="Button" />
+              </div>
+              <div> <span class="lbl" >android:textColor</span>
+                <input id="btn_textcolor" value="#FFFFFFFF" name="btn_textcolor" class="btn_target txtbx" />
+                <label id="label_textcolor">#FFFFFFFF</label>
+              </div>
+              <div> <span class="lbl" >android:textSize</span>
+                <input type="textbox" class="btn_target txtbx" name="btn_textsize" id="btn_textsize" value="" >
+                <label id="label_textsize">sp</label>
+              </div>
+              <div style="margin-top:4px;padding-top:2px;border-top:1px solid #c7c7c7"> <span id="shadowlbl" class="lbl" >Shadow</span>
+                <input id="shadowchk" class="" type="checkbox" />
+              </div>
+              <div class="shadow"> <span class="lbl" >android:shadowColor</span>
+                <input id="btn_shadowcolor" value="#FF000000" name="btn_shadowcolor" class="btn_target txtbx" />
+                <label id="label_shadowcolor">#FF000000</label>
+              </div>
+              <div class="shadow"> <span class="lbl" >android:shadowDx</span>
+                <input type="textbox" class="btn_target txtbx" name="btn_shadowdx" id="btn_shadowdx" value="" >
+                <label id="label_shadowdx">dp</label>
+              </div>
+              <div class="shadow"> <span class="lbl" >android:shadowDy</span>
+                <input type="textbox" class="btn_target txtbx" name="btn_shadowdy" id="btn_shadowdy" value="" >
+                <label id="label_shadowdy">dp</label>
+              </div>
+              <div class="shadow"> <span class="lbl" >android:shadowRadius</span>
+                <input type="textbox" class="btn_target txtbx" name="btn_shadowradius" id="btn_shadowradius" value="" >
+                <label id="label_shadowradius">dp</label>
+              </div>
+            </div>
+            <h2 class="accordion-header">Background</h2>
+            <div class="accordion-content">
+              <div style="width: 100%;">
+                <ul class="tabs" DATA-PERSIST="true">
+                  <li><a href="#tab_gradient">gradient</a></li>
+                  <li><a href="#tab_solid">solid</a></li>
+                </ul>
+                <div class="tabcontents">
+                  <div id="tab_gradient"> 
+                    <div> <span class="lbl" >android:type</span>
+                      <select id="gradient_type" name="gradient_type" class="shape_target txtbx" >
+                        <option value="linear" >linear</option>
+                        <option value="radial" >radial</option>
+                      </select>
+                      &nbsp; Center
+                      <input id="centerchk" class="" type="checkbox" />
+                    </div>
+                    <div class="centerx"> <span class="lbl" >android:centerX</span>
+                      <input id="gradient_centerx" name="gradient_centerx" class="shape_target txtbx" type="textbox" />
+                      <label id="label_gradient_centerx">%</label>
+                    </div>
+                    <div class="typeradial"> <span class="lbl" >android:centerY</span>
+                      <input id="gradient_centery" name="gradient_centery" class="shape_target txtbx" type="textbox" />
+                      <label id="label_gradient_centery">%</label>
+                    </div>
+                    <div> <span class="lbl" >android:startColor</span> 
+                      <input id="gradient_startcolor" value="#FF449DEF" name="gradient_startcolor" class="shape_target txtbx" />
+                      <label id="label_gradient_startcolor">#FF449DEF</label>
+                    </div>
+                    <div class="centerx centercol"> <span class="lbl" >android:centerColor</span> 
+                      <input id="gradient_centercolor" value="#FF198CFF" name="gradient_centercolor" class="shape_target txtbx" />
+                      <label id="label_gradient_centercolor">#FF198CFF</label>
+                    </div>
+                    <div> <span class="lbl" >android:endColor</span> 
+                      <input id="gradient_endcolor" value="#FF2F6699" name="gradient_centercolor" class="shape_target txtbx" />
+                      <label id="label_gradient_endcolor">#FF2F6699</label>
+                    </div>
+                    <div class="typelineer" > <span class="lbl" >android:angle</span>
+                      <input id="gradient_angle" name="gradient_angle" class="shape_target txtbx" type="textbox" />
+                      <label id="label_gradient_angle">°</label>
+                    </div>
+                    <div class="typeradial"> <span class="lbl" >android:gradientRadius</span>
+                      <input id="gradient_gradientradius" name="gradient_gradientradius" class="shape_target txtbx" type="textbox" />
+                      <label id="label_gradientradius">%</label>
+                    </div>
+                  </div>
+                  <div id="tab_solid"> 
+                    <div> <span class="lbl" >android:color</span> 
+                      <input id="solid_color" value="#FF4F4F4F" name="solid_color" class="shape_target txtbx" />
+                      <label id="label_solid_color">#FF4F4F4F</label>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <h2 class="accordion-header">corners</h2>
+              <div class="accordion-content" >
+                <div> <span class="lbl" >android:radius</span>
+                  <input id="corners_radius" name="corners_radius" class="shape_target txtbx" type="textbox" />
+                </div>
+                <div style="margin-top:4px;padding-top:2px;border-top:1px solid #c7c7c7"> <span id="radiuslbl" class="lbl" ><b>Radius Property</b></span>
+                  <input id="radiuschk" class="" type="checkbox" />
+                </div>
+                <div class="radius"> <span class="lbl" >android:topLeftRadius</span>
+                  <input id="corners_topleftradius" name="corners_topleftradius"  class="shape_target txtbx" type="textbox" />
+                  <label id="label_corners_topleftradius">dp</label>
+                </div>
+                <div class="radius"> <span class="lbl" >android:topRightRadius</span>
+                  <input id="corners_toprightradius" name="corners_toprightradius"  class="shape_target txtbx" type="textbox" />
+                  <label id="label_corners_toprightradius">dp</label>
+                </div>
+                <div class="radius"> <span class="lbl" >android:bottomLeftRadius</span>
+                  <input id="corners_bottomleftradius" name="corners_bottomleftradius" class="shape_target txtbx" type="textbox" />
+                  <label id="label_corners_bottomleftradius">dp</label>
+                </div>
+                <div class="radius"> <span class="lbl" >android:bottomRightRadius</span>
+                  <input id="corners_bottomrightradius" name="corners_bottomrightradius" class="shape_target txtbx" type="textbox" />
+                  <label id="label_corners_bottomrightradius">dp</label>
+                </div>
+              </div>
+              <h2 class="accordion-header">padding</h2>
+              <div class="accordion-content">
+                <div style="margin-top:4px;padding-top:2px;"> <span id="paddinglbl" class="lbl" ><b>Padding On</b></span>
+                  <input id="paddingchk" class="" type="checkbox" />
+                </div>
+                <div class="padding" > <span class="lbl" >android:left</span>
+                  <input id="padding_left" name="padding_left" class="shape_target txtbx" type="textbox" />
+                  <label id="label_padding_left">dp</label>
+                </div>
+                <div class="padding" > <span class="lbl" >android:top</span>
+                  <input id="padding_top" name="padding_top" class="shape_target txtbx" type="textbox" />
+                  <label id="label_padding_top">dp</label>
+                </div>
+                <div class="padding" > <span class="lbl" >android:right</span>
+                  <input id="padding_right" name="padding_right" class="shape_target txtbx" type="textbox" />
+                  <label id="label_padding_right">dp</label>
+                </div>
+                <div class="padding" > <span class="lbl" >android:bottom</span>
+                  <input id="padding_bottom" name="padding_bottom" class="shape_target txtbx" type="textbox" />
+                  <label id="label_padding_bottom">dp</label>
+                </div>
+              </div>
+              <h2 class="accordion-header">stroke</h2>
+              <div class="accordion-content">
+                <div> <span class="lbl" >android:width</span>
+                  <input id="stroke_width" name="stroke_width" class="shape_target txtbx" type="textbox" />
+                  <label id="label_stroke_width">dp</label>
+                </div>
+                <div> <span class="lbl" >android:color</span> 
+                  <input id="stroke_color" value="#FF878787" name="stroke_color" class="shape_target txtbx" />
+                  <label id="label_stroke_color">#FF878787</label>
+                </div>
+              </div>
+            </div></td>
+          <td width="58%"><span style="font-size:18pt;font-family:Georgia;margin-top:-15px">Preview</span>
+            <div id="previewcont">
+              <input id="preview" class="preview" type="button" />
+            </div>
+            <br/>
+            <span style="font-size:18pt;font-family:Georgia;">Code</span>
+            <div class="codeContainer">
+            <div style="width: 510px; margin: 0 auto; padding: 20px 0 10px;">
+              <ul class="tabs" DATA-PERSIST="true">
+                <li><a href="#code_button">Button</a></li>
+                <li><a href="#code_shape">buttonshape.xml</a></li>
+              </ul>
+              <div class="tabcontents">
+                <div class="codetab" id="code_button" >Code Button</div>
+                <div class="codetab" id="code_shape" style="display:none" >
+                  <div>&lt;?xml version="1.0" encoding="utf-8"?&gt;</div>
+                  <div class="code-shape" ></div>
+                </div>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td colspan="3"><br/>
+          <span style="font-size:18pt;font-family:Georgia;">Tutorial</span>
+            <div class="tutoContainer">
+            <CENTER>
+            <img src="eclipsepreview.png" style="border:1px solid #000000"/></CENTER>
+            </div>
+            </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
